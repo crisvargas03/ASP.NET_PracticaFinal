@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {}
+    "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
+    "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
         "projectName": "Banking.Core",
-        "projectPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
-        "packagesPath": "C:\\Users\\civar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\civar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
