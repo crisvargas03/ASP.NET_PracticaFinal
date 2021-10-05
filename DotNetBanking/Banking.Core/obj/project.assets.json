@@ -1025,13 +1025,19 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Luis Aneuris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\Luis\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+>>>>>>> Luis
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
       "projectName": "Banking.Core",
       "projectPath": "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
@@ -1044,6 +1050,19 @@
       ],
       "configFilePaths": [
         "C:\\Users\\Luis Aneuris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+      "projectName": "Banking.Core",
+      "projectPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Luis
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1090,7 +1109,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> Luis
       }
     }
   }
