@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Banking.Core;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +12,7 @@ namespace Banking.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
-     
+
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -21,14 +22,40 @@ namespace Banking.Data
         public DbSet<Account> accounts { get; set; }
 
         public DbSet<User> users { get; set; }
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<IdentityUser>()
-        //        .ToTable("AspNetUsers", t => t.ExcludeFromMigrations());
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Ignore<IdentityRole>();
+            modelBuilder.Ignore<IdentityUserToken<string>>();
+            modelBuilder.Ignore<IdentityUserRole<string>>();
+            modelBuilder.Ignore<IdentityUserLogin<string>>();
+            modelBuilder.Ignore<IdentityRoleClaim<string>>();
+            modelBuilder.Entity<IdentityUser>()
+
+                .Ignore(c => c.AccessFailedCount)
+                .Ignore(c => c.LockoutEnabled)
+                .Ignore(c => c.TwoFactorEnabled)
+                .Ignore(c => c.ConcurrencyStamp)
+                .Ignore(c => c.LockoutEnd)
+                .Ignore(c => c.EmailConfirmed)
+                .Ignore(c => c.TwoFactorEnabled)
+                .Ignore(c => c.LockoutEnd)
+                .Ignore(c => c.AccessFailedCount)
+                .Ignore(c => c.PhoneNumberConfirmed)
+                .Ignore(c => c.Email)
+                .Ignore(c => c.NormalizedEmail)
+                .Ignore(c => c.PhoneNumber);
+
+
+            //modelBuilder.Entity<IdentityUser>().ToTable("Users");//to change the name of table.
+
+        }
+
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+
             optionsBuilder.UseSqlite("Data Source=netbacking.db");
             base.OnConfiguring(optionsBuilder);
         }
