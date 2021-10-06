@@ -32,7 +32,7 @@ namespace DotNetBanking
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                          options.UseSqlite("Data Source=netbacking.db"));
-            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>()
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddIdentityCore<User>(setupAction =>
