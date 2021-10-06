@@ -1,0 +1,33 @@
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.deps.json
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.json
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.dev.json
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.dll
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.pdb
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.AssemblyReference.cache
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfoInputs.cache
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfo.cs
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.CoreCompileInputs.cache
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.dll
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.pdb
+C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.genruntimeconfig.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.deps.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.dev.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.pdb
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Core.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Core.pdb
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.AssemblyReference.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfoInputs.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfo.cs
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.CoreCompileInputs.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.CopyComplete
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.pdb
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.genruntimeconfig.cache
