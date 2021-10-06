@@ -15,7 +15,7 @@ namespace Banking.Core
         public DateTime DateCreate { get; set; }
 
         //TODO:CREATE RELATION WITH CUSTOMER
-
+        public virtual ICollection<Transaction> transactions { get; set; }
 
     }
 }

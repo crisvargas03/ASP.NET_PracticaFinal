@@ -1,46 +1,24 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {}
+    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {
+    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
-        "projectName": "DotNetBanking",
-        "projectPath": "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
-        "packagesPath": "C:\\Users\\Luis Aneuris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis Aneuris\\Desktop\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\obj\\",
+        "projectUniqueName": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "projectName": "Banking.Core",
+        "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "packagesPath": "C:\\Users\\ltavarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luis Aneuris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
-        "projectName": "DotNetBanking",
-        "projectPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
-        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis\\Source\\Repos\\CristianVargas34\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Luis
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ltavarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -69,15 +47,239 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
+        "projectName": "Banking.Data",
+        "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
+        "packagesPath": "C:\\Users\\ltavarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ltavarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
+                "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
+        "projectName": "DotNetBanking",
+        "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\DotNetBanking.csproj",
+        "packagesPath": "C:\\Users\\ltavarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\DotNetBanking\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ltavarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {
+                "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
               "version": "[5.0.9, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
             },
@@ -89,7 +291,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -114,11 +316,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> Luis
         }
       }
     }

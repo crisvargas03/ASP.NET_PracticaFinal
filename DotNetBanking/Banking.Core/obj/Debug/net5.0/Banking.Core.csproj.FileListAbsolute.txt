@@ -13,3 +13,18 @@ C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\o
 C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\ref\Banking.Core.dll
 C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.pdb
 C:\Users\Luis Aneuris\Desktop\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.genruntimeconfig.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\Banking.Core.deps.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\Banking.Core.runtimeconfig.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\Banking.Core.runtimeconfig.dev.json
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\Banking.Core.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\ref\Banking.Core.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\bin\Debug\net5.0\Banking.Core.pdb
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.AssemblyInfoInputs.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.AssemblyInfo.cs
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.csproj.CoreCompileInputs.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\ref\Banking.Core.dll
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.pdb
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.genruntimeconfig.cache
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.csproj.AssemblyReference.cache

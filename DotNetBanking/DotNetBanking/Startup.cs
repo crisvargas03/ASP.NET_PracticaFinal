@@ -1,6 +1,13 @@
+using Banking.Core;
+using Banking.Data;
+using DotNetBanking.Areas.Identity;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,7 +30,28 @@ namespace DotNetBanking
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options =>
+                         options.UseSqlite("Data Source=netbacking.db"));
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddIdentityCore<User>(setupAction =>
+            {
+                setupAction.Password.RequireDigit = true;
+                setupAction.Password.RequiredUniqueChars = 0;
+                setupAction.Password.RequireLowercase = false;
+                setupAction.Password.RequireNonAlphanumeric = false;
+                setupAction.Password.RequireUppercase = false;
+                setupAction.Password.RequiredLength = 3;
+                setupAction.SignIn.RequireConfirmedEmail = false;
+                setupAction.SignIn.RequireConfirmedPhoneNumber = false;
+            });
             services.AddRazorPages();
+
+            services.AddServerSideBlazor();
+
+            services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<User>>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +72,8 @@ namespace DotNetBanking
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
