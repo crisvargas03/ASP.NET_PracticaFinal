@@ -46,19 +46,39 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
-            [Display(Name = "Email")]
+            [Display(Name = "Correo Electronico")]
             public string Email { get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Contraseña *")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "Confirnar Contraseña *")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            /*-------------------------------------------------------------*/
+            [Required]
+            [Display(Name = "Documento de Identidad *")]
+            public string DNI { get; set; }
+
+            [Required]
+            [Display(Name = "Nombre *")]
+            public string Name { get; set; }
+
+            [Required]
+            [Display(Name = "Apellido *")]
+            public string LastName { get; set; }
+
+            [Display(Name = "Telefono")]
+            public string Phone { get; set; }
+
+            [Display(Name = "Direceccion de Domicilio")]
+            public string HomeAddress { get; set; }
+
         }
 
         public async Task OnGetAsync(string returnUrl = null)
