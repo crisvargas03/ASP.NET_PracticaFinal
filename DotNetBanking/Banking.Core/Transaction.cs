@@ -9,10 +9,25 @@ namespace Banking.Core
     public class Transaction
     {
         public int TransactionID { get; set; }
+
+        /*
+         Este es el campo que se utilizara para la cuenta del usuario que envia 
+         */
         public int AccountID { get; set; }
-        public virtual Account Account { get; set; }
+
+        /*
+         Este es el campo relacional de la cuentas de los usuarios
+         */
+        public virtual User userAccount { get; set; }
+
+        /*
+         Esta la fecha que se creo la transaccion
+         */
 
         public DateTime Date { get; set; }
+        /*
+         Esta es la cantidad que se transfiere al usuario receptor
+         */
         public double Amount { get; set; }
     }
 }

@@ -23,7 +23,6 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
         private readonly UserManager<Banking.Core.User> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
-
         public RegisterModel(
             UserManager<Banking.Core.User> userManager,
             SignInManager<Banking.Core.User> signInManager,
