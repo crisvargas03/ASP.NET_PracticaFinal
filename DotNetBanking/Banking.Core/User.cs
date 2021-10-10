@@ -23,7 +23,15 @@ namespace Banking.Core
 
         public string Direccion { get; set; }
 
-        public virtual ICollection<Account> Accounts { get; set; }
+        /*
+         ESTE ES EL ACCOUT UNICO DEL LOS USUARIO
+         */
+
+        public int AccountId { get; set; }
+        /*
+         ESTE ES EL BALANCE DEL USUARIO EN SU CUENTA
+         */
+        public double Balance { get; set; }
 
     }
 }

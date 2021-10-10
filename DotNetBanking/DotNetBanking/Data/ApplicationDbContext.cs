@@ -19,7 +19,7 @@ namespace Banking.Data
         {
         }
         public DbSet<Transaction> transactions { get; set; }
-        public DbSet<Account> accounts { get; set; }
+        //public DbSet<Account> accounts { get; set; }
 
         public DbSet<User> users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

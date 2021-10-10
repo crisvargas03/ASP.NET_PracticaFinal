@@ -1,6 +1,7 @@
 using Banking.Core;
 using Banking.Data;
 using DotNetBanking.Areas.Identity;
+using DotNetBanking.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -48,6 +49,7 @@ namespace DotNetBanking
             });
             services.AddRazorPages();
 
+            services.AddScoped<ServiceTrans>();
             services.AddServerSideBlazor();
 
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<User>>();

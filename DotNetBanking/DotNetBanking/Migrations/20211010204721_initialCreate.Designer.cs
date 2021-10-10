@@ -9,42 +9,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotNetBanking.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211006190629_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20211010204721_initialCreate")]
+    partial class initialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.10");
-
-            modelBuilder.Entity("Banking.Core.Account", b =>
-                {
-                    b.Property<int>("AccountID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("REAL");
-
-                    b.Property<DateTime>("DateCreate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NO_Account")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Type_Account")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("AccountID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("accounts");
-                });
 
             modelBuilder.Entity("Banking.Core.Transaction", b =>
                 {
@@ -61,9 +33,12 @@ namespace DotNetBanking.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("userAccountId")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("TransactionID");
 
-                    b.HasIndex("AccountID");
+                    b.HasIndex("userAccountId");
 
                     b.ToTable("transactions");
                 });
@@ -129,8 +104,14 @@ namespace DotNetBanking.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
+                    b.Property<int>("AccountId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Apellidos")
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("Balance")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("Direccion")
                         .HasColumnType("TEXT");
@@ -154,22 +135,13 @@ namespace DotNetBanking.Migrations
                     b.HasDiscriminator().HasValue("User");
                 });
 
-            modelBuilder.Entity("Banking.Core.Account", b =>
-                {
-                    b.HasOne("Banking.Core.User", null)
-                        .WithMany("Accounts")
-                        .HasForeignKey("UserId");
-                });
-
             modelBuilder.Entity("Banking.Core.Transaction", b =>
                 {
-                    b.HasOne("Banking.Core.Account", "Account")
-                        .WithMany("transactions")
-                        .HasForeignKey("AccountID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Banking.Core.User", "userAccount")
+                        .WithMany()
+                        .HasForeignKey("userAccountId");
 
-                    b.Navigation("Account");
+                    b.Navigation("userAccount");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -179,16 +151,6 @@ namespace DotNetBanking.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Banking.Core.Account", b =>
-                {
-                    b.Navigation("transactions");
-                });
-
-            modelBuilder.Entity("Banking.Core.User", b =>
-                {
-                    b.Navigation("Accounts");
                 });
 #pragma warning restore 612, 618
         }
