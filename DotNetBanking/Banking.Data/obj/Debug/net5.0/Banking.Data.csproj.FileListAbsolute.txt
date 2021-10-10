@@ -31,3 +31,21 @@ C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\ref\Banking.Data.dll
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.pdb
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.genruntimeconfig.cache
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.deps.json
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.json
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.runtimeconfig.dev.json
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.dll
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Data.pdb
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Core.dll
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\bin\Debug\net5.0\Banking.Core.pdb
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.AssemblyReference.cache
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfoInputs.cache
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.AssemblyInfo.cs
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.CoreCompileInputs.cache
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.csproj.CopyComplete
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.dll
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\ref\Banking.Data.dll
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.pdb
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\Banking.Data\obj\Debug\net5.0\Banking.Data.genruntimeconfig.cache
