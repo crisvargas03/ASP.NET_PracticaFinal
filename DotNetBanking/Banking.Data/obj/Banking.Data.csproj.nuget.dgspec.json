@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {}
+    "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
+    "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "projectUniqueName": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
         "projectName": "Banking.Core",
-        "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
-        "packagesPath": "C:\\Users\\ltavarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
+        "projectPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj",
+        "packagesPath": "C:\\Users\\civar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ltavarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\civar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,24 +92,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {
+    "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
+        "projectUniqueName": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
         "projectName": "Banking.Data",
-        "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
-        "packagesPath": "C:\\Users\\ltavarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\obj\\",
+        "projectPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\Banking.Data.csproj",
+        "packagesPath": "C:\\Users\\civar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ltavarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\civar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,8 +120,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
-                "projectPath": "C:\\Users\\ltavarez\\Documents\\Me\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj"
+              "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj": {
+                "projectPath": "C:\\Users\\civar\\Desktop\\Aprendiendo Web\\ASP.NET\\ASP.NET_PracticaFinal\\DotNetBanking\\Banking.Core\\Banking.Core.csproj"
               }
             }
           }
@@ -202,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
