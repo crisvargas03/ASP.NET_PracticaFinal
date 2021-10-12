@@ -42,4 +42,3 @@ C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\ref\Banking.Core.dll
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.pdb
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.genruntimeconfig.cache
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\Banking.Core\obj\Debug\net5.0\Banking.Core.csproj.AssemblyReference.cache

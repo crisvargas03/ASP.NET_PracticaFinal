@@ -12,29 +12,31 @@
 
 <h4>Transaction</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="text-center">
+            <h1>@ViewData["Title"]</h1>
+            <h4>Transacion Banking</h4>
+            <hr />
+        </div>
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input asp-for="Transaction.Date" type="hidden" value="@DateTime.Now" />
             <input asp-for="Transaction.AccountID" type="hidden" value="@UserManager.GetUserId(User)" />
             <div class="form-group">
                 <label asp-for="Transaction.Amount" class="control-label"></label>
-                <input asp-for="Transaction.Amount" class="form-control" />
+                <input asp-for="Transaction.Amount" class="form-control" required />
                 <span asp-validation-for="Transaction.Amount" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label class="control-label">Receptor:</label>
+                <select asp-for="SelectedStaffId" asp-items="Model.Staff" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                    <option value=""></option>
+                </select>
+                <p asp-for-="SelectedStaffId">
 
-                <div class="form-group">
-
-                    <select asp-for="SelectedStaffId" asp-items="Model.Staff"  class="form-select" >
-                        <option value=""></option>
-                    </select>
-                    <p asp-for-="SelectedStaffId">
-
-                </div>
+          
 
             </div>
 
@@ -45,22 +47,17 @@
         </form>
 
 
-        <div class="form-group row flex-md-row-reverse">
-            <div class="col-12 col-md-6 px-3 py-2">
-                <button id="payBtn" class="btn btn-primary w-100" disabled="disabled">
-                    <i class="fas fa-circle-notch fa-spin"></i>
-                </button>
-            </div>
-            <div class="col-12 col-md-6 px-3 py-2">
-                <a id="cancelBtn" class="btn btn-outline-secondary w-100" href="/Index">Cancel</a>
-            </div>
-        </div>
-        <div id="errAlert" class="alert alert-danger" style="display: none;" role="alert"></div>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+
+    <div class="form-group row flex-md-row-reverse">
+        <div class="col-12 col-md-6 px-3 py-2">
+            <a id="cancelBtn" class="btn btn-outline-danger w-100" asp-page="Index">Cancel</a>
+        </div>
+    </div>
+
 </div>
 
 @section Scripts {

@@ -991,15 +991,12 @@ C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Create.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Historico.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\TransacionView.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Transacion\Delete.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Transacion\Details.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Transacion\Edit.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.RazorTargetAssemblyInfo.cache
