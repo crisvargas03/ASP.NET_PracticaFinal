@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Banking.Core;
+using System.Security.Claims;
+
 namespace DotNetBanking.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
@@ -23,12 +25,14 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
         private readonly UserManager<Banking.Core.User> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly Banking.Data.ApplicationDbContext _context;
         public RegisterModel(
             UserManager<Banking.Core.User> userManager,
             SignInManager<Banking.Core.User> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender, Banking.Data.ApplicationDbContext context)
         {
+            _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
@@ -54,11 +58,6 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
             [DataType(DataType.Password)]
             [Display(Name = "Contraseña *")]
             public string Password { get; set; }
-
-            [DataType(DataType.Password)]
-            [Display(Name = "Confirnar Contraseña *")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-            public string ConfirmPassword { get; set; }
 
             /*-------------------------------------------------------------*/
             [Required]
@@ -89,26 +88,30 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            Guid myuuid = Guid.NewGuid();
+            string myuuidAsString = myuuid.ToString();
+
+
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new User { UserName = Input.Email, Email = Input.Email };
+                var user = new User
+                {
+                    UserName = Input.Email,
+                    Email = Input.Email,
+                    Nombres = Input.Name,
+                    Apellidos = Input.LastName,
+                    PhoneNumber = Input.Phone,
+                    Documento_Identidad = Input.DNI,
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
+
+                var account = new Banking.Core.Account { Amount = 1500, DateCreate = DateTime.Now, UserID = user.Id, NO_Account = myuuidAsString };
+                _context.accounts.Add(account);
+                await _context.SaveChangesAsync();
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
-
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

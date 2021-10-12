@@ -16,13 +16,39 @@ namespace DotNetBanking.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.10");
 
+            modelBuilder.Entity("Banking.Core.Account", b =>
+                {
+                    b.Property<int>("AccountID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("REAL");
+
+                    b.Property<DateTime>("DateCreate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NO_Account")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("AccountID");
+
+                    b.ToTable("accounts");
+                });
+
             modelBuilder.Entity("Banking.Core.Transaction", b =>
                 {
                     b.Property<int>("TransactionID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("AccountID")
+                    b.Property<string>("AccountID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("AccountID1")
                         .HasColumnType("INTEGER");
 
                     b.Property<double>("Amount")
@@ -31,12 +57,17 @@ namespace DotNetBanking.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("userAccountId")
+                    b.Property<string>("ReceptAccountID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("TransactionID");
 
-                    b.HasIndex("userAccountId");
+                    b.HasIndex("AccountID1");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("transactions");
                 });
@@ -102,16 +133,13 @@ namespace DotNetBanking.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<int>("AccountId")
+                    b.Property<int>("AccountID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("AccountID1")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Apellidos")
-                        .HasColumnType("TEXT");
-
-                    b.Property<double>("Balance")
-                        .HasColumnType("REAL");
-
-                    b.Property<string>("Direccion")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Documento_Identidad")
@@ -130,16 +158,20 @@ namespace DotNetBanking.Migrations
                     b.Property<int>("UserID")
                         .HasColumnType("INTEGER");
 
+                    b.HasIndex("AccountID1");
+
                     b.HasDiscriminator().HasValue("User");
                 });
 
             modelBuilder.Entity("Banking.Core.Transaction", b =>
                 {
-                    b.HasOne("Banking.Core.User", "userAccount")
-                        .WithMany()
-                        .HasForeignKey("userAccountId");
+                    b.HasOne("Banking.Core.Account", null)
+                        .WithMany("transactions")
+                        .HasForeignKey("AccountID1");
 
-                    b.Navigation("userAccount");
+                    b.HasOne("Banking.Core.User", null)
+                        .WithMany("Transaction")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -149,6 +181,25 @@ namespace DotNetBanking.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Banking.Core.User", b =>
+                {
+                    b.HasOne("Banking.Core.Account", "Account")
+                        .WithMany()
+                        .HasForeignKey("AccountID1");
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("Banking.Core.Account", b =>
+                {
+                    b.Navigation("transactions");
+                });
+
+            modelBuilder.Entity("Banking.Core.User", b =>
+                {
+                    b.Navigation("Transaction");
                 });
 #pragma warning restore 612, 618
         }

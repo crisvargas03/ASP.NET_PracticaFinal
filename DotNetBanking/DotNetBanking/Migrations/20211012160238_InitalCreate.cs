@@ -3,10 +3,26 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DotNetBanking.Migrations
 {
-    public partial class initialCreate : Migration
+    public partial class InitalCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "accounts",
+                columns: table => new
+                {
+                    AccountID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    NO_Account = table.Column<string>(type: "TEXT", nullable: true),
+                    Amount = table.Column<double>(type: "REAL", nullable: false),
+                    DateCreate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    UserID = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_accounts", x => x.AccountID);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
@@ -19,9 +35,8 @@ namespace DotNetBanking.Migrations
                     Documento_Identidad = table.Column<string>(type: "TEXT", nullable: true),
                     Telefono = table.Column<string>(type: "TEXT", nullable: true),
                     Nombre_Comercial = table.Column<string>(type: "TEXT", nullable: true),
-                    Direccion = table.Column<string>(type: "TEXT", nullable: true),
-                    AccountId = table.Column<int>(type: "INTEGER", nullable: true),
-                    Balance = table.Column<double>(type: "REAL", nullable: true),
+                    AccountID = table.Column<int>(type: "INTEGER", nullable: true),
+                    AccountID1 = table.Column<int>(type: "INTEGER", nullable: true),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     PasswordHash = table.Column<string>(type: "TEXT", nullable: true),
@@ -30,6 +45,12 @@ namespace DotNetBanking.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_accounts_AccountID1",
+                        column: x => x.AccountID1,
+                        principalTable: "accounts",
+                        principalColumn: "AccountID",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,17 +80,25 @@ namespace DotNetBanking.Migrations
                 {
                     TransactionID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    AccountID = table.Column<int>(type: "INTEGER", nullable: false),
-                    userAccountId = table.Column<string>(type: "TEXT", nullable: true),
+                    AccountID = table.Column<string>(type: "TEXT", nullable: true),
+                    ReceptAccountID = table.Column<string>(type: "TEXT", nullable: true),
                     Date = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Amount = table.Column<double>(type: "REAL", nullable: false)
+                    Amount = table.Column<double>(type: "REAL", nullable: false),
+                    AccountID1 = table.Column<int>(type: "INTEGER", nullable: true),
+                    UserId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_transactions", x => x.TransactionID);
                     table.ForeignKey(
-                        name: "FK_transactions_AspNetUsers_userAccountId",
-                        column: x => x.userAccountId,
+                        name: "FK_transactions_accounts_AccountID1",
+                        column: x => x.AccountID1,
+                        principalTable: "accounts",
+                        principalColumn: "AccountID",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_transactions_AspNetUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -81,15 +110,25 @@ namespace DotNetBanking.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_AccountID1",
+                table: "AspNetUsers",
+                column: "AccountID1");
+
+            migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_transactions_userAccountId",
+                name: "IX_transactions_AccountID1",
                 table: "transactions",
-                column: "userAccountId");
+                column: "AccountID1");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_transactions_UserId",
+                table: "transactions",
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -102,6 +141,9 @@ namespace DotNetBanking.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "accounts");
         }
     }
 }

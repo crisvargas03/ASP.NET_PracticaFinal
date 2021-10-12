@@ -1,0 +1,68 @@
+﻿@page
+
+@model DotNetBanking.Pages.CreateModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<Banking.Core.User> UserManager
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Transaction.Date" type="hidden" value="@DateTime.Now" />
+            <input asp-for="Transaction.AccountID" type="hidden" value="@UserManager.GetUserId(User)" />
+            <div class="form-group">
+                <label asp-for="Transaction.Amount" class="control-label"></label>
+                <input asp-for="Transaction.Amount" class="form-control" />
+                <span asp-validation-for="Transaction.Amount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Receptor:</label>
+
+                <div class="form-group">
+
+                    <select asp-for="SelectedStaffId" asp-items="Model.Staff"  class="form-select" >
+                        <option value=""></option>
+                    </select>
+                    <p asp-for-="SelectedStaffId">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+        </form>
+
+
+        <div class="form-group row flex-md-row-reverse">
+            <div class="col-12 col-md-6 px-3 py-2">
+                <button id="payBtn" class="btn btn-primary w-100" disabled="disabled">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </button>
+            </div>
+            <div class="col-12 col-md-6 px-3 py-2">
+                <a id="cancelBtn" class="btn btn-outline-secondary w-100" href="/Index">Cancel</a>
+            </div>
+        </div>
+        <div id="errAlert" class="alert alert-danger" style="display: none;" role="alert"></div>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
