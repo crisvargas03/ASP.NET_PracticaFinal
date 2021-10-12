@@ -45,9 +45,11 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
+            [Display(Name = "Correo Electronico")]
             public string Email { get; set; }
 
             [Required]
+            [Display(Name = "Contraseña")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
