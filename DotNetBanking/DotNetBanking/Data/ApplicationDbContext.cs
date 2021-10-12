@@ -18,12 +18,14 @@ namespace Banking.Data
             : base(options)
         {
         }
+        /*Esto son nuestro DBSET O NUESTRA TABLA UTILZANDO CODEFIRST CON NUESTRA CLASES*/
         public DbSet<Transaction> transactions { get; set; }
         public DbSet<Account> accounts { get; set; }
-
         public DbSet<User> users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            /*Aqui estoy especificando la tabla que quiero ignora de identity asi como tambien la columna de IdentityUser que no necesito*/
             base.OnModelCreating(modelBuilder);
             modelBuilder.Ignore<IdentityRole>();
             modelBuilder.Ignore<IdentityUserToken<string>>();
