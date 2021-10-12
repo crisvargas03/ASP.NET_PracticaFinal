@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetBanking", "DotNetBanking\DotNetBanking.csproj", "{5616FD40-14E2-496A-9B9C-87A09FA150EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetBanking", "DotNetBanking\DotNetBanking.csproj", "{5616FD40-14E2-496A-9B9C-87A09FA150EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Core", "Banking.Core\Banking.Core.csproj", "{5ACB040D-054C-4195-B49A-FA0BC97B34FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Core", "Banking.Core\Banking.Core.csproj", "{5ACB040D-054C-4195-B49A-FA0BC97B34FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Data", "Banking.Data\Banking.Data.csproj", "{D7F9B9EC-3738-42E8-A479-0479652896DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Data", "Banking.Data\Banking.Data.csproj", "{D7F9B9EC-3738-42E8-A479-0479652896DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

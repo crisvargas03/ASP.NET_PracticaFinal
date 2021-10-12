@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Banking.Core
 {
-   public class User: IdentityUser
+    public class User : IdentityUser
     {
         public int UserID { get; set; }
         [Required]
@@ -21,17 +21,22 @@ namespace Banking.Core
 
         public string Nombre_Comercial { get; set; }
 
-        public string Direccion { get; set; }
+        public virtual ICollection<Transaction> Transaction { get; set; }
+
+        public int AccountID { get; set; }
+        public virtual Account Account { get; set; }
+
+        //public virtual Account Account { get; set; }
 
         /*
          ESTE ES EL ACCOUT UNICO DEL LOS USUARIO
          */
 
-        public int AccountId { get; set; }
+        //public string AccountId { get; set; }
         /*
          ESTE ES EL BALANCE DEL USUARIO EN SU CUENTA
          */
-        public double Balance { get; set; }
+        //public double Balance { get; set; }
 
     }
 }

@@ -26,24 +26,24 @@ namespace DotNetBanking.Service
                 /*
                  Esta parte es para hacer un descuento del balance de emisor de la transaccion
                  */
-                double totalBalance = 0;
-                var transactions = _dbContext.transactions.Where(_trans => _trans.AccountID == user.AccountId).ToList();
-                foreach (var transacion in transactions)
-                {
-                    totalBalance += transacion.Amount;
-                }
+                //double totalBalance = 0;
+                ////var transactions = _dbContext.transactions.Where(_trans => _trans.AccountID == user.AccountId).ToList();
+                //foreach (var transacion in transactions)
+                //{
+                //    totalBalance += transacion.Amount;
+                //}
 
-                if (user.Balance < totalBalance)
-                {
-                    Console.WriteLine("NO TIENE DINERO");
-                }
-                else
-                {
-                    user.Balance = user.Balance - totalBalance;
-                    _dbContext.users.Add(user);
-                    await _dbContext.SaveChangesAsync();
+                //if (user.Balance < totalBalance)
+                //{
+                //    Console.WriteLine("NO TIENE DINERO");
+                //}
+                //else
+                //{
+                //    user.Balance = user.Balance - totalBalance;
+                //    _dbContext.users.Add(user);
+                //    await _dbContext.SaveChangesAsync();
 
-                }
+                //}
 
             }
             catch (Exception)
@@ -62,14 +62,14 @@ namespace DotNetBanking.Service
                 /*
                  Esta parte es para hacer un descuento del balance de Recepto de la transaccion
                  */
-                double totalBalance = 0;
-                var balances = _dbContext.transactions.Where(_trans => _trans.AccountID == user.AccountId).ToList();
-                foreach (var balance in balances)
-                {
-                    totalBalance += balance.Amount;
-                }
+                //double totalBalance = 0;
+                //var balances = _dbContext.transactions.Where(_trans => _trans.AccountID == user.AccountId).ToList();
+                //foreach (var balance in balances)
+                //{
+                //    totalBalance += balance.Amount;
+                //}
 
-                user.Balance = user.Balance + totalBalance;
+                //user.Balance = user.Balance + totalBalance;
                 _dbContext.users.Add(user);
                 await _dbContext.SaveChangesAsync();
             }

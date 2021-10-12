@@ -13,12 +13,12 @@ namespace Banking.Core
         /*
          Este es el campo que se utilizara para la cuenta del usuario que envia 
          */
-        public int AccountID { get; set; }
+        public string  AccountID { get; set; }
 
         /*
          Este es el campo relacional de la cuentas de los usuarios
          */
-        public virtual User userAccount { get; set; }
+        public string  ReceptAccountID { get; set; }
 
         /*
          Esta la fecha que se creo la transaccion
