@@ -19,24 +19,9 @@ namespace Banking.Core
 
         public string Telefono { get; set; }
 
-        public string Nombre_Comercial { get; set; }
-
         public virtual ICollection<Transaction> Transaction { get; set; }
 
         public int AccountID { get; set; }
         public virtual Account Account { get; set; }
-
-        //public virtual Account Account { get; set; }
-
-        /*
-         ESTE ES EL ACCOUT UNICO DEL LOS USUARIO
-         */
-
-        //public string AccountId { get; set; }
-        /*
-         ESTE ES EL BALANCE DEL USUARIO EN SU CUENTA
-         */
-        //public double Balance { get; set; }
-
     }
 }

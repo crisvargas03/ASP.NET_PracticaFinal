@@ -96,6 +96,9 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+                /*
+                 Aqui estamos creado un object de la clase Usuario para leugo guardar esa informacion en el usuario
+                 */
                 var user = new User
                 {
                     UserName = Input.Email,
@@ -105,9 +108,19 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
                     PhoneNumber = Input.Phone,
                     Documento_Identidad = Input.DNI,
                 };
+                /*
+                 Aqui hacemos el proceso de espera para la creacion del usuario con la clave 
+                 */
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
+
+                /*
+                 Aqui estamos creando un objecto de la clase account y con un campo UserId Para luego poder vincular la cuenta del USUARIO
+                 */
                 var account = new Banking.Core.Account { Amount = 1500, DateCreate = DateTime.Now, UserID = user.Id, NO_Account = myuuidAsString };
+                /*
+                 Aqui estamos guardando la cuenta y esperando que se guarden los cambios 
+                 */
                 _context.accounts.Add(account);
                 await _context.SaveChangesAsync();
                 if (result.Succeeded)

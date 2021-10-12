@@ -28,6 +28,10 @@ namespace DotNetBanking.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
+            
+            /*
+             Aqui estamos cerrando la session del usuario
+             */
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
             if (returnUrl != null)
