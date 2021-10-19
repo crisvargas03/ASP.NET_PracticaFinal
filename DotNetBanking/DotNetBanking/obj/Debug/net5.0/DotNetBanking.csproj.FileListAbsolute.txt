@@ -937,8 +937,6 @@ C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanki
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.TagHelpers.output.cache
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.RazorCoreGenerate.cache
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
-C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
@@ -1443,3 +1441,5 @@ C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.Views.pdb
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.csproj.CopyComplete
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.genruntimeconfig.cache
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Create.cshtml.g.cs
+C:\Users\civar\Desktop\Aprendiendo Web\ASP.NET\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Pages\Historico.cshtml.g.cs

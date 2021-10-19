@@ -8,12 +8,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Transaction</h4>
-<hr />
 <div class="row justify-content-center">
-    <div class="col-md-6">
+    <div class="col-6">
         <div class="text-center">
             <h1>@ViewData["Title"]</h1>
             <h4>Transacion Banking</h4>
@@ -23,27 +19,31 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input asp-for="Transaction.Date" type="hidden" value="@DateTime.Now" />
             <input asp-for="Transaction.AccountID" type="hidden" value="@UserManager.GetUserId(User)" />
-            <div class="form-group">
-                <label asp-for="Transaction.Amount" class="control-label"></label>
-                <input asp-for="Transaction.Amount" class="form-control" required />
-                <span asp-validation-for="Transaction.Amount" class="text-danger"></span>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="form-group">
+                        <label class="control-label">Receptor</label>
+                        <select asp-for="SelectedStaffId" asp-items="Model.Staff"
+                            class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                            <option value=""></option>
+                        </select>
+                        <p asp-for-="SelectedStaffId">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Transaction.Amount" class="control-label"></label>
+                        <input asp-for="Transaction.Amount" class="form-control" required />
+                        <span asp-validation-for="Transaction.Amount" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label class="control-label">Receptor:</label>
-                <select asp-for="SelectedStaffId" asp-items="Model.Staff" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
-                    <option value=""></option>
-                </select>
-                <p asp-for-="SelectedStaffId">
-
-          
-
+            <div class="row">
+                <div class="form-group col-6">
+                    <input type="submit" value="Hacer Transaccion" class="btn btn-primary w-100" />
+                </div>
+                <div class="col-6">
+                    <a id="cancelBtn" class="btn btn-danger w-100" asp-page="Index">Cancelar</a>
+                </div>
             </div>
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-
         </form>
 
 
@@ -52,14 +52,8 @@
 
 <div>
 
-    <div class="form-group row flex-md-row-reverse">
-        <div class="col-12 col-md-6 px-3 py-2">
-            <a id="cancelBtn" class="btn btn-outline-danger w-100" asp-page="Index">Cancel</a>
-        </div>
-    </div>
-
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
