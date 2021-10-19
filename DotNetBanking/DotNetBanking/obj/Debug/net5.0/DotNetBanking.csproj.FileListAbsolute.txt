@@ -979,8 +979,6 @@ C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.TagHelpers.output.cache
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\DotNetBanking.RazorCoreGenerate.cache
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
-C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\Users\ltavarez\Documents\Me\ASP.NET_PracticaFinal\DotNetBanking\DotNetBanking\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
