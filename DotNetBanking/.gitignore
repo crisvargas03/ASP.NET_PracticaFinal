@@ -1,0 +1,14 @@
+
+# Visual Studio Code
+.vscode
+
+
+# Build results
+Backing.Core/bin/Debug
+Backing.Core/obj/Debug
+Backing.Data/bin/Debug
+Backing.Data/obj/Debug
+DotNetBacking/bin/Debug
+DotNetBacking/obj/Debug
+# Visual Studio 
+.vs/
