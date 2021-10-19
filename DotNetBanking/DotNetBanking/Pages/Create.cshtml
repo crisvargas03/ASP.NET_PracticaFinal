@@ -8,6 +8,8 @@
     ViewData["Title"] = "Create";
 }
 
+@if (User.Identity.IsAuthenticated)
+{
 <div class="row justify-content-center">
     <div class="col-6">
         <div class="text-center">
@@ -24,7 +26,7 @@
                     <div class="form-group">
                         <label class="control-label">Receptor</label>
                         <select asp-for="SelectedStaffId" asp-items="Model.Staff"
-                            class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                                class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
                             <option value=""></option>
                         </select>
                         <p asp-for-="SelectedStaffId">
@@ -37,6 +39,10 @@
                 </div>
             </div>
             <div class="row">
+                @if (Model.errorTransacion)
+                {
+                    <script>alert("No tiene esta cantidad para transferir");</script>
+                }
                 <div class="form-group col-6">
                     <input type="submit" value="Hacer Transaccion" class="btn btn-primary w-100" />
                 </div>
@@ -49,11 +55,18 @@
 
     </div>
 </div>
-
-<div>
-
+}
+else{
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="text-center">
+            <h1>@ViewData["Title"]</h1>
+            <h4>Necesita esta logueado</h4>
+            <hr />
+        </div>
+    </div>
 </div>
-
+}
 @section Scripts {
-@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -16,6 +16,7 @@ namespace DotNetBanking.Pages
     {
         private readonly Banking.Data.ApplicationDbContext _context;
         private readonly UserManager<Banking.Core.User> _userManager;
+        public bool errorTransacion { get; set; }
         //private readonly HttpContext _httpContext;
 
         //public string UserId { get; set; }
@@ -31,8 +32,8 @@ namespace DotNetBanking.Pages
         public Transaction Transaction { get; set; }
 
 
-        [BindProperty]
-        public List<User> user { get; set; }
+        //[BindProperty]
+        //public List<User> user { get; set; }
 
 
         public CreateModel(Banking.Data.ApplicationDbContext context, UserManager<Banking.Core.User> userManager, object selectedTransc = null)
@@ -43,12 +44,16 @@ namespace DotNetBanking.Pages
             _context = context;
         }
 
-        public IActionResult OnGet()
+        public void LoadAccount()
         {
             var UserId = _userManager.GetUserId(HttpContext.User);
-
+            _user = _context.users.FirstOrDefault(user => user.Id == UserId);
             var staff = _context.accounts.Where(account => account.UserID != UserId).ToList();
             Staff = new SelectList(staff, null, nameof(_account.NO_Account));
+        }
+        public IActionResult OnGet()
+        {
+            LoadAccount();
             return Page();
         }
 
@@ -56,8 +61,10 @@ namespace DotNetBanking.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-
+            errorTransacion = false;
+            LoadAccount();
             var UserId = _userManager.GetUserId(HttpContext.User);
+            var account = _context.accounts.First(account => account.UserID == UserId);
 
             _context.accounts.Where(account => account.UserID != UserId).ToList();
             Transaction.ReceptAccountID = SelectedStaffId.ToString();
@@ -65,8 +72,12 @@ namespace DotNetBanking.Pages
             {
                 return Page();
             }
+            if(account.Amount < Transaction.Amount)
+            {
+                errorTransacion = true;
+                return Page();
+            }
 
-            var account = _context.accounts.First(account => account.UserID == UserId);
             account.Amount = account.Amount - Transaction.Amount;
             _context.accounts.Update(account);
             _context.transactions.Add(Transaction);
