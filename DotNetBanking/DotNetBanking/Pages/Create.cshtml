@@ -39,6 +39,10 @@
                 </div>
             </div>
             <div class="row">
+                @if (Model.errorTransacion)
+                {
+                    <script>alert("No tiene esta cantidad para transferir");</script>
+                }
                 <div class="form-group col-6">
                     <input type="submit" value="Hacer Transaccion" class="btn btn-primary w-100" />
                 </div>
